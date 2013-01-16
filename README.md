@@ -6,7 +6,7 @@ A set of SASS mixins
 
 ## Dependencies
 
-### css
+### CSS
 
     * {
       -webkit-box-sizing: border-box; /* Safari */
@@ -14,7 +14,7 @@ A set of SASS mixins
       box-sizing: border-box;
     }
     
-### html     
+### IE Classes     
 
     <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
     <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
