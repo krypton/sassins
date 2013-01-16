@@ -1,0 +1,14 @@
+@mixin vcenter($element:"div") {
+   $element {
+      display: table;  
+  }
+  
+   $element div{
+            
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            margin-top: expression((parentNode.offsetHeight.offsetHeight/2)-(parseInt(this.offsetHeight)/2) <0 ? "0" : (parentNode.offsetHeight/2)-(parseInt(this.offsetHeight)/2) +'px'); 
+            
+          }
+}
