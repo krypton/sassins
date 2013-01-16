@@ -1,0 +1,35 @@
+@mixin sizes($element:"div", $width:auto, $height:auto, $padding:0, $border:0) {
+ 
+  $width: $width;
+  $height: $height;
+  $padding: $padding;
+  $border: $border;
+  
+  $diff: ( ($padding*2) + ($border*2) );
+  $nw: $width - $diff;
+  $nh: $height - $diff;
+  
+  @if $width == auto {
+    $nw: auto;
+  }
+  
+  @if $height == auto {
+    $nh: auto;
+  }
+  
+  $element {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    border-width: $border;    
+  }
+  
+  
+  .ie-lt8 $element {
+    width: $nw;
+    height: $nh;
+    padding: $padding;
+    border-width: $border;
+  }
+  
+}
