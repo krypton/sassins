@@ -24,5 +24,5 @@ A set of SASS mixins
     
 ## Examples
 
-    @include sizes('div', '200px', '270px', '20px', '2px');
+    @include sizes('div', 200px, 270px, 20px, 2px);
     @include vcenter('div');
