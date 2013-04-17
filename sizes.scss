@@ -17,7 +17,7 @@
     $nh: auto;
   }
   
-  $element {
+  #{$element} {
     width: $width;
     height: $height;
     padding: $padding;
@@ -25,7 +25,7 @@
   }
   
   
-  .ie-lt8 $element {
+  .ie-lt8 #{$element} {
     width: $nw;
     height: $nh;
     padding: $padding;
